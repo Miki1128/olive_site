@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'olives/index'
   devise_for :users
-  resources :olives, only: :index
+  root to: "olives#index"
+  resources :olives, only: [:index,:new]
 end
