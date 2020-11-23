@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :olives do
   end
   get 'tweets/index'
-  resources :tweets, only: :index
+  resources :users, only: :show 
 end
 
