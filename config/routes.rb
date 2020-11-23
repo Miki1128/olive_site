@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   get 'olives/index'
   root to: "olives#index"
-  resources :olives do
-  end
+  resources :olives 
   get 'tweets/index'
-  resources :users, only: :show 
+  resources :tweets 
+  resources :users, only: :show
 end
 

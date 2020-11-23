@@ -1,20 +1,14 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
-      世界中どこにいても素敵な思い出を残す
+      世界中どこにいても素敵な思い出を残そう
     </h2>
     <p class='service-explain'>
       特別な場所で思い出の一枚を
     </p>
-    <div class='store-btn'>
-      <%#= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%#= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
-    </div>
   </div>
-  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
   <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents'>
@@ -23,7 +17,7 @@
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
-        <%= image_tag "furima-intro01.png", class:"list-pict" %>
+        <%= image_tag "cosmin-serban-XVDJ5yEdSxo-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'>
           Hawaii
         </h3>
@@ -32,48 +26,66 @@
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro02.png", class:"list-pict" %>
+        <%= image_tag "luca-bravo-TaCk3NspYe0-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'>
           New York
         </h3>
         <p class='reason-list-description'>
-          オシャレな1枚を
+          Coolなウエディングフォト
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro03.png", class:"list-pict" %>
+        <%= image_tag "jad-limcaco-NT1mJPgni6A-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'>
           Paris
         </h3>
         <p class='reason-list-description'>
-          大人な世界で
+          オシャレな大人な世界で
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro01.png", class:"list-pict" %>
+        <%= image_tag "aron-van-de-pol-tZDtyUrYrFU-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'>
-          Hawaii
+          U.K
         </h3>
         <p class='reason-list-description'>
-          リゾート気分を堪能しながら
+          古き良き街並みの中で
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro02.png", class:"list-pict" %>
+        <%= image_tag "jake-blucker-8LlJNFLTEm0-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'>
-          New York
+          L.A
         </h3>
         <p class='reason-list-description'>
-          オシャレな1枚を
+          Hollywoodの世界へ！
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro03.png", class:"list-pict" %>
+        <%= image_tag "duy-nguyen-9WwWGeHEbmQ-unsplash", class:"list-pict" %>
         <h3 class='reason-list-text'>
-          Paris
+          Singapole
         </h3>
         <p class='reason-list-description'>
-          大人な世界で
+          最高の夜景と自然の中で
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "mar-cerdeira-bBF9e2UUh88-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          Tourky
+        </h3>
+        <p class='reason-list-description'>
+          非現実的な歴史ある世界
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kseniya-petukhova-SahEnZR5Ni8-unsplash", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          韓国
+        </h3>
+        <p class='reason-list-description'>
+          韓国の伝統衣装に触れる
         </p>
       </li>
     </ul>
@@ -123,6 +135,6 @@
       <%# //商品がある場合は表示されないようにしましょう %>
       <%# /商品がない場合のダミー %>
     </ul>
-    <%= link_to 'see more report', tweets_path, class: "subtitle" %>
+    <%= link_to 'see more report', tweets_index_path, class: "subtitle" %>
 </div>
 <%= render "shared/footer" %>

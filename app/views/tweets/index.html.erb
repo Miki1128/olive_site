@@ -1,6 +1,6 @@
 <%= render "shared/header" %>
 
-<%= link_to '投稿する', "tweets/new", class: "submit-btn" %>
+<%= link_to '投稿する', new_tweet_path, class: "submit-btn" %>
 <div class="contents row">
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
@@ -8,7 +8,7 @@
         <span><%= image_tag 'arrow_top.png' %></span>
         <ul class="more_list">
           <li>
-            <%= link_to '詳細',  tweets_path(tweet.id), method: :get %>
+            <%= link_to '詳細', tweet_path(tweet.id), method: :get %>
           </li>
           <li>
             <%= link_to '編集', edit_tweet_path(tweet.id), method: :get %>
@@ -20,8 +20,8 @@
       </div>
       <p><%= tweet.text %></p>
       <span class="name">
-      <a href="/users/<%= @tweet.user.id %>">
-        <span>投稿者</span><%= @tweet.user.nickname %>
+      <a href="/users/<%= tweet.user_id %>">
+        <span>投稿者</span><%= '#' %>
       </a>
     </span>
     </div>

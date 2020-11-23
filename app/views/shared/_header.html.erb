@@ -1,15 +1,9 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
   <div class='search-bar-contents'>
-    <%= link_to image_tag("furima-logo-color.png", class:"furima-icon"), root_path %>
-    <form class="search-form" action="#">
-      <%#=input class='input-box' placeholder='キーワードから探す'>
-      <button class="search-button">
-        <%= image_tag "search.png", class:"search-icon" %>
-      </button>
-    </form>
   </div>
   <div class='nav'>
+    <%= link_to image_tag("IMG-1955.jpg", class:"logo-white"), root_path %>
     <ul class='lists-left'>
       <li><%= link_to 'カテゴリー', "#", class: "category-list" %></li>
       <li><%= link_to 'ブランド', "#", class: "brand-list" %></li>
@@ -24,6 +18,7 @@
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       <%end%>
       <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>
+      <li><%= link_to 'お問い合わせ', "#", class: "contact-list" %></li>
     </ul>
   </div>
 </header>
