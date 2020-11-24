@@ -1,7 +1,6 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 5vw;
   display: flex;
   flex-direction: column;
 }
@@ -12,35 +11,34 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1vh 1vh;
+  padding: 0 2vw;
+  text-decoration: none;
+  color: #696969;
 }
 
-.lists-left {
-  display: flex;
-
-}
 
 .category-list {
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 4vw;
   color: #696969;
 }
 
 .brand-list {
   text-decoration: none;
   color: #696969;
+  margin-right: 4vw;
 }
 
 .lists-right {
+  align-items: flex-start;  
   display: flex;
   list-style: none;
-  align-items: flex-end;
+  
 }
 
 
 .user-nickname {
-  text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 4vw;
   color: #696969;
   font-weight: bold;
 }
@@ -49,22 +47,26 @@
 .logout {
   text-decoration: none;
   color: #696969;
+  margin-right: 4vw;
 }
 
 .login {
   text-decoration: none;
-  line-height: 32px;
-  margin-right: 3vw;
+  margin-right: 4vw;
   color: #696969;
 }
 
 .sign-up {
   text-decoration: none;
   color: #696969;
+  margin-right: 4vw;
 }
 
 .contact-list {
   text-decoration: none;
-  margin-left: 3vw;
   color: #696969;
+  padding: 1vw;
+  background-color: #f7f7f7; /*背景色*/
+  border: 2px solid #ccc; /*線の太さ・色*/
+  border-radius: 8px; /*角の丸み*/ 
 }
