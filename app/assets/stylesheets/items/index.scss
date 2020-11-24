@@ -93,18 +93,24 @@ a {
 }
 
 .item-contents>.title {
-  font-size: 5vh;
-  line-height: 1.4;
+  text-align: center;
+  font-size: 4vh;
   font-weight: bold;
+  margin-bottom: 1vh;
+  position: relative;
 }
 
 .item-contents>.subtitle {
-  font-size: 4vh;
+  font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
-  color: #696969;
   font-weight: bold;
-  font-family: cursive;
+  display: inline-block;
+  padding: 0.3em 1em;
+  color: #84d6ad;
+  border: solid 2px #84d6ad;
+  border-radius: 3px;
+  transition: .4s;
 }
 
 .item-lists {

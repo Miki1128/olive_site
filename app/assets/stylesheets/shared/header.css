@@ -8,58 +8,60 @@
 .nav {
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 2vw;
+  padding: 0 9vw 0 8vw;
   text-decoration: none;
   color: #696969;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
 
 .category-list {
   text-decoration: none;
-  margin-right: 4vw;
+  margin-right: 5vw;
   color: #696969;
 }
 
 .brand-list {
   text-decoration: none;
   color: #696969;
-  margin-right: 4vw;
+  margin-right: 5vw;
 }
 
 .lists-right {
   align-items: flex-start;  
   display: flex;
   list-style: none;
-  
+  justify-content: flex-end;
+  margin-top: 45px;
 }
 
 
 .user-nickname {
-  margin-right: 4vw;
+  margin-right: 6vw;
   color: #696969;
   font-weight: bold;
+
 }
 
 
 .logout {
   text-decoration: none;
   color: #696969;
-  margin-right: 4vw;
+  margin-right: 6vw;
 }
 
 .login {
   text-decoration: none;
-  margin-right: 4vw;
+  margin-right: 6vw;
   color: #696969;
 }
 
 .sign-up {
   text-decoration: none;
   color: #696969;
-  margin-right: 4vw;
+  margin-right: 6vw;
 }
 
 .contact-list {
