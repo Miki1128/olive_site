@@ -9,6 +9,7 @@
   <h2 class='service-title'> 世界中どこにいても素敵な思い出を残そう </h2>
     <p class='service-explain'> 特別な場所で思い出の一枚を </p>
 </div>
+<%#見出し%>
 
 <%# Report %>
 <div class='select-reason-contents'>
@@ -17,122 +18,88 @@
       <li class='list'>
       <%= image_tag "cosmin-serban-XVDJ5yEdSxo-unsplash.jpg", class:"list-pict" %>
         <h3 class='reason-list-text'> Hawaii </h3>
-        <p class='reason-list-description'>
-          リゾート気分を堪能しながら
-        </p>
+        <p class='reason-list-description'> リゾート気分を堪能しながら </p>
       </li>
       <li class='list'>
-        <%= image_tag "luca-bravo-TaCk3NspYe0-unsplash.jpg", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          New York
-        </h3>
-        <p class='reason-list-description'>
-          Coolなウエディングフォト
-        </p>
+      <%= image_tag "luca-bravo-TaCk3NspYe0-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'> New York </h3>
+        <p class='reason-list-description'> Coolなウェディングフォト </p>
       </li>
       <li class='list'>
-        <%= image_tag "jad-limcaco-NT1mJPgni6A-unsplash.jpg", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          Paris
-        </h3>
-        <p class='reason-list-description'>
-          オシャレな大人な世界で
-        </p>
+      <%= image_tag "jad-limcaco-NT1mJPgni6A-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'> Paris </h3>
+        <p class='reason-list-description'> オシャレな大人な世界で </p>
       </li>
       <li class='list'>
-        <%= image_tag "aron-van-de-pol-tZDtyUrYrFU-unsplash.jpg", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          U.K
-        </h3>
-        <p class='reason-list-description'>
-          古き良き街並みの中で
-        </p>
+      <%= image_tag "aron-van-de-pol-tZDtyUrYrFU-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'> U.K </h3>
+        <p class='reason-list-description'> 古き良き街並みの中で </p>
       </li>
       <li class='list'>
-        <%= image_tag "jake-blucker-8LlJNFLTEm0-unsplash.jpg", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          L.A
-        </h3>
-        <p class='reason-list-description'>
-          Hollywoodの世界へ！
-        </p>
+      <%= image_tag "jake-blucker-8LlJNFLTEm0-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'> L.A </h3>
+        <p class='reason-list-description'> Hollywoodの世界へ！ </p>
       </li>
       <li class='list'>
-        <%= image_tag "duy-nguyen-9WwWGeHEbmQ-unsplash", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          Singapole
-        </h3>
-        <p class='reason-list-description'>
-          最高の夜景と自然の中で
-        </p>
+      <%= image_tag "duy-nguyen-9WwWGeHEbmQ-unsplash", class:"list-pict" %>
+        <h3 class='reason-list-text'> Singapole </h3>
+        <p class='reason-list-description'> 最高の夜景と自然の中で </p>
       </li>
       <li class='list'>
-        <%= image_tag "mar-cerdeira-bBF9e2UUh88-unsplash.jpg", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          Tourky
-        </h3>
-        <p class='reason-list-description'>
-          非現実的な歴史ある世界
-        </p>
+      <%= image_tag "mar-cerdeira-bBF9e2UUh88-unsplash.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'> Tourky </h3>
+        <p class='reason-list-description'> 非現実的な歴史ある世界 </p>
       </li>
       <li class='list'>
-        <%= image_tag "kseniya-petukhova-SahEnZR5Ni8-unsplash", class:"list-pict" %>
-        <h3 class='reason-list-text'>
-          韓国
-        </h3>
-        <p class='reason-list-description'>
-          韓国の伝統衣装に触れる
-        </p>
+      <%= image_tag "kseniya-petukhova-SahEnZR5Ni8-unsplash", class:"list-pict" %>
+        <h3 class='reason-list-text'> 韓国 </h3>
+        <p class='reason-list-description'> 韓国の伝統衣装に触れる </p>
       </li>
     </ul>
-  </div>
-  <%# /FURIMAが選ばれる3つの理由部分 %>
+</div>
+<%# Report %>
 
   
-  <%# 商品一覧 %>
-  <div class='item-contents'>
-    <h2 class='title'>Report</h2>
-      <h2>gmap</h2>
-      <div id='map'></div>
+<%# Country%>
+<div class='item-contents'>
+  <h2 class='title'>Report</h2>
+  <%# MAP %>
+<div id='map'>
+  <% render "maps/map"%>
+</div>
+  <%# MAP %>
 
-    <% render "maps/map"%>
-      
     <ul class='item-lists'>
       <li class='list'>
-        <%= link_to '' do %>
-        <%= image_tag "https://cdn.pixabay.com/photo/2019/11/10/11/13/couple-4615557_1280.jpg", class: "item-img" %>
+      <%= link_to '' do %>
+      <%= image_tag "https://cdn.pixabay.com/photo/2019/11/10/11/13/couple-4615557_1280.jpg", class: "item-img" %>
         <div class='item-info'>
-          <h3 class='item-name'>
-            ハワイ撮影レポート
-          </h3>
-        <% end %>
+          <h3 class='item-name'> ハワイ撮影レポート </h3>
+      <% end %>
       </li>
       <li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://media.istockphoto.com/photos/bride-and-groom-walking-together-picture-id588264250", class: "item-img" %>
+      <%= link_to '#' do %>
+      <%= image_tag "https://media.istockphoto.com/photos/bride-and-groom-walking-together-picture-id588264250", class: "item-img" %>
         <div class='item-info'>
-          <h3 class='item-name'>
-            ニューヨークの撮影
-          </h3>
-        <% end %>
-      </li><li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_1280.jpg", class: "item-img" %>
+          <h3 class='item-name'> ニューヨークの撮影 </h3>
+       <% end %>
+      </li>
+      <li class='list'>
+      <%= link_to '#' do %>
+      <%= image_tag "https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_1280.jpg", class: "item-img" %>
         <div class='item-info'>
-          <h3 class='item-name'>
-            シンガポールでの撮影
-          </h3>
-        <% end %>
-      </li><li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://cdn.pixabay.com/photo/2020/11/12/13/44/labrador-retriever-5735582_1280.jpg", class: "item-img" %>
+          <h3 class='item-name'> シンガポールでの撮影 </h3>
+      <% end %>
+      </li>
+      <li class='list'>
+      <%= link_to '#' do %>
+      <%= image_tag "https://cdn.pixabay.com/photo/2020/11/12/13/44/labrador-retriever-5735582_1280.jpg", class: "item-img" %>
         <div class='item-info'>
-          <h3 class='item-name'>
-            パリで撮影レポート
-          </h3>
-        <% end %>
+          <h3 class='item-name'> パリで撮影レポート </h3>
+      <% end %>
       </li>
     </ul>
     <%= link_to 'see more report', tweets_path, class: "subtitle" %>
 </div>
+<%# Country%>
 <%= render "shared/footer" %>
