@@ -61,12 +61,14 @@
 
   
 <%# Country%>
+  <div class="title_report"><div class='title'>Report</div></div>
 <div class='item-contents'>
-  <h2 class='title'>Report</h2>
   <%# MAP %>
-<div id='map'>
+  <div class="map_box">
+  <div id='map'>
   <% render "maps/map"%>
-</div>
+  </div>
+  </div>
   <%# MAP %>
 
     <ul class='item-lists'>
@@ -99,7 +101,7 @@
       <% end %>
       </li>
     </ul>
-    <%= link_to 'see more report', tweets_path, class: "subtitle" %>
 </div>
+    <div class="more_btn"><%= link_to 'see more report', tweets_path, class: "subtitle" %></div>
 <%# Country%>
 <%= render "shared/footer" %>

@@ -84,12 +84,16 @@ a {
 /* //画面上部の「Where do you want to take a photo」帯部分 */
 
 /* see more report */
+.map_box{
+  width: calc(100vw/3);
+  margin-left: 200px;
+  
+}
 .item-contents {
   background-color: #FFF;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  padding: 2vh 0;
 }
 
 .item-contents>.title {
@@ -114,10 +118,11 @@ a {
 }
 
 .item-lists {
-  width: 100vw;
+  width: calc(100vw/2);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 100px;
+  
 }
 
 .item-lists>.list {
@@ -131,10 +136,9 @@ a {
   position: relative;
 }
 
-.item-img {
-  width: 33vh;
-  height: 33vh;
-}
+// .item-img {
+  
+// }
 
 .sold-out {
   position: absolute;
@@ -184,4 +188,8 @@ a {
   font-size: 2vh;
 }
 
+
 /* //商品一覧 */
+
+
+
