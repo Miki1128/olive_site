@@ -665,7 +665,7 @@ a {
 }
 
 a:hover {
-  color: #57C3E9;
+  color: #56965fe9;
 }
 
 .bold {
@@ -811,7 +811,7 @@ header.header .user_nav span:after {
 }
 
 header.header .user_nav span:hover ul {
-  color: #57C3E9;
+  color: #56965fe9;
   display: block;
 }
 
@@ -908,7 +908,7 @@ div.contents.row div.content_post .more ul.more_list {
   background-color: #fff;
   border: 1px solid #ddd;
   display: none;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(44, 43, 43, 0.2);
   border-radius: 3px;
 }
 
@@ -926,7 +926,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
+  background-color: #56965fe9;
   color: #fff;
 }
 
@@ -952,12 +952,14 @@ div.contents.row div.content_post span.name {
 
 div.contents.row div.content_post span.name a {
   display: block;
-  color: #aaa;
+  color: #ffffff;
+  text-shadow: rgb(64, 74, 85);
 }
 
 div.contents.row div.content_post span.name a:hover {
   text-decoration: underline;
-  color: #aaa;
+  color: #ffffff;
+  text-shadow: rgb(64, 74, 85);
 }
 
 div.contents.row div.content_post span.name span {
@@ -989,7 +991,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color: #56965fe9;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -997,7 +999,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #56965fe9;
 }
 
 .container {
@@ -1022,7 +1024,7 @@ form input[type="submit"]:hover {
 }
 
 .comments a {
-  color: #57C3E9;
+  color: #56965fe9;
 }
 
 .comments a:hover {
