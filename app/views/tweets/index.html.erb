@@ -3,6 +3,10 @@
 <div class="contents row">
   <% @tweets.each do |tweet| %>   
     <%= render partial: "tweet", locals: { tweet: tweet } %>
+    
   <% end %>
 </div>
+
+
+<%#<div class="buttons_<%= @tweet.id "><%= render partial: 'tweets/like' </div>%>
 <%= render "shared/footer" %>

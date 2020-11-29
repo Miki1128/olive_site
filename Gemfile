@@ -60,3 +60,5 @@ gem 'devise'
 gem 'pry-rails'
 
 gem 'payjp'
+
+gem 'jquery-rails'
