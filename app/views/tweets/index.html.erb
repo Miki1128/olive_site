@@ -1,10 +1,13 @@
 <%= render "shared/header" %>
-<%= link_to '投稿する', new_tweet_path, class: "submit-btn" %>
-<div class="contents row">
-  <% @tweets.each do |tweet| %>   
-    <%= render partial: "tweet", locals: { tweet: tweet } %>
-    
-  <% end %>
+<div class="contents main">
+  <%= link_to '投稿する', new_tweet_path, class: "submit-btn" %>
+</div>
+<div class=contents_box>
+  <div class="contents row">
+    <% @tweets.each do |tweet| %>   
+    <%= render partial: "tweet", locals: { tweet: tweet } %>  
+    <% end %>
+  </div>
 </div>
 
 

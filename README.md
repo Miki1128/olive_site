@@ -16,6 +16,7 @@
 
 - has_many :tweets
 - has_many :comments
+- has_many :contacts
 
 ## tweets テーブル
 
@@ -43,3 +44,17 @@
 
 - belongs_to :user
 - belongs_to :tweet
+
+
+| Column                 | Type       | Options      |
+| -----------------------| ---------- | ------------ |
+| country                | string     | null: false  |
+| fullname               | string     | null: false  |
+| mail                   | string     | null: false  |
+| tel                    | string     | null: false  |
+| budget                 | string     | null: false  |
+| shooting_start_at_date | string     | null: false  |
+| shooting_time_duration | string     | null: false  |
+| comment                | text       | null: false  |
+
+- belongs_to :user

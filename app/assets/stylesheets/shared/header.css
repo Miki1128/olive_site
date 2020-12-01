@@ -3,25 +3,30 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  padding: 0 1vw 1vw 1vw;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1000;
 }
 
 .nav {
   font-size: 15px;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  padding: 0 4vw 0 2vw;
+  padding: 0 3vw 1vw 2vw;
   text-decoration: none;
   color: #696969;
   justify-content: space-between;
   align-items: flex-start;
   
+
 }
 
 .category-list {
   text-decoration: none;
   margin-right: 5vw;
   color: #696969;
+  
 }
 
 .brand-list {
@@ -46,7 +51,6 @@
 
 }
 
-
 .logout {
   text-decoration: none;
   color: #696969;
@@ -66,15 +70,17 @@
 }
 
 .contact-list {
+  
   text-decoration: none;
   color: #696969;
-  padding: 1vw;
+  padding: 0.6vw;
   background-color: #f7f7f7; /*背景色*/
   border: 2px solid #ccc; /*線の太さ・色*/
   border-radius: 8px; /*角の丸み*/ 
 }
 
 .submit-btn {
+  margin: 10vw 0vw 0vw 2vw;
   font-size: 1.5vw;
   font-weight: bolder;
   position: fixed;
