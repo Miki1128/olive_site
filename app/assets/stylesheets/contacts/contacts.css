@@ -1,0 +1,28 @@
+.contents-box {
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.contact {
+  background-color: lightgray;
+  margin: 1vw 15vw;
+  text-align: left;
+}
+
+.contact_form{
+  padding: 1vw 5vw ;
+}
+
+.contact_form_low{
+  padding: 4vw 5vw ;
+  display: flex;
+  text-align: left;
+}
+
+.h1 {
+  background-color: #fafafa;
+    border: 1px solid #eee;
+    font-size: large;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
