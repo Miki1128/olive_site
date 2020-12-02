@@ -62,3 +62,5 @@ gem 'pry-rails'
 gem 'payjp'
 
 gem 'jquery-rails'
+
+gem 'active_hash'

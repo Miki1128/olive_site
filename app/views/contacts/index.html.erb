@@ -1,65 +1,84 @@
 <%= render "shared/header" %>
-<div class="contact">
-  <div class="contact_form">
-    <h1>お問い合わせ</h1>
-    <h2>ご連絡先</h2>
-      <label for="type">撮影場所</label>
+  <div class=contents_box>
+  <div class="contact">
+    <div class="contact_form">
+      <h1>お問い合わせ</h1>
+      <h2>Oliveサポートデスクに相談してあなたに合ったフォトグラファー/プランを提案してもらおう</h2>
+      <h2>ご連絡先</h2>
+        <label for="type">撮影場所</label>
+          <div class="type_1">
+            <input type="text" id=county pname="name" list="example">
+              <datalist id="example">
+                <option value="ハワイ"></option>
+                <option value="ニューヨーク"></option>
+                <option value="パリ"></option>
+                <option value="イギリス"></option>
+                <option value="シンガポール"></option>
+                <option value="トルコ"></option>
+                <option value="韓国"></option>
+                <option value="その他"></option>
+             </datalist>
+          </div>
+        <label for="type">お申込者様のお名前</label>
+           <div class="type_1">
+            <input id=fullname placeholser="お名前" name="name" type="text" lass="form_fullname">
+          </div>
+        <label for="type">お名前（カナ）</label>
+           <div class="type_1">
+            <input id=fullname placeholser="お名前" name="name" type="text" lass="form_fullname">
+          </div>
+        <label for="type">メールアドレス</label>
+          <div class="type_1">
+            <input id=mail placeholser="メールアドレス" name="mail" type="email" lass="form_mail">
+          </div>
+        <label for="type">電話番号</label>
+          <div class="type_1">
+            <input id=tel placeholser="電話番号" name="tel" type="text" lass="form_tel">
+          </div>
+        <label for="type">ご予算</label>
+          <div class="type_1">
+            <input id=budget placeholser="ご予算" name="budget" type="number" lass="form_budget">
+            <span class="input-group-text">万円</span>
+          </div>
+          
+      <h2>撮影日時</h2>
+      <label for="type">ご希望撮影開始日時</label>
         <div class="type_1">
-          <input id=county placeholser="国選択" type="text" lass="form_country">
+          <input id="shooting_start_at_date" placeholder="ご希望の撮影開始日時" name="shooting_start_at_date" type="datetime-local" value="2020-12-08" class="form_shooting_start_date">
         </div>
-      <label for="type">お申込者様のお名前</label>
-         <div class="type_1">
-          <input id=fullname placeholser="お名前" name="name" type="text" lass="form_fullname">
-        </div>
-      <label for="type">メールアドレス</label>
+      <label for="type">ご希望撮影時間</label>
         <div class="type_1">
-          <input id=mail placeholser="メールアドレス" name="mail" type="text" lass="form_mail">
+          <div class="type_2">
+            <input type="number" id="shooting_time_duration" name="shooting_time_duration" placeholder="" value="60" step="10" min="0" class="shooting_time_duration">
+            <span class="input-group-text">分</span>
+          </div>
         </div>
-      <label for="type">電話番号</label>
-        <div class="type_1">
-          <input id=tel placeholser="電話番号" name="tel" type="text" lass="form_tel">
-        </div>
-      <label for="type">ご予算</label>
-        <div class="type_1">
-          <input id=budget placeholser="ご予算" name="budget" type="text" lass="form_budget">
-        </div>
-        
-    <h2>撮影日時</h2>
-    <label for="type">ご希望撮影開始日時</label>
-      <div class="type_1">
-        <input id="shooting_start_at_date" placeholder="ご希望の撮影開始日時" name="shooting_start_at_date" type="text" value="2020-12-08" class="form_shooting_start_date">
-      </div>
-    <label for="type">ご希望撮影時間</label>
-      <div class="type_1">
-        <div class="type_2">
-          <input type="number" id="shooting_time_duration" name="shooting_time_duration" placeholder="" value="60" step="10" min="0" class="shooting_time_duration">
-        </div> 
-        <div class="type_3">
-          <span class="input-group-text">分</span>
-        </div>
-      </div>
-    <h2>その他</h2>
-    <label for="type">コメント</label>
-      <textarea placeholder="撮影に関する質問やご希望内容など" rows="3" name="comment" cols="50" class="form-control"></textarea>
-  </div>
-  <div class="contact_form_low">
-    <div id="submit-box">
-      <button type="submit" id="submit" class="text_btn">この内容で相談</button>
+      <h2>その他</h2>
+      <label for="type">コメント</label>
+        <textarea placeholder="撮影に関する質問やご希望内容など" rows="3" name="comment" cols="50" class="form-control"></textarea>
     </div>
-    <h3> Oliveをご利用のお客様 </h3>
-      <p class=small>
-       "「@ezweb.ne.jp」「@docomo.ne.jp」「@softbank.ne.jp」などのEメールアドレスをご利用の場合、受信拒否設定等の理由により、弊社からお送りするメールをお届けすることができない可能性があります。"
-       ドメイン拒否設定を解除していただくか、弊社ドメイン「famarry.com」を受信リストに加えていただきますよう、お願いいたします。"
-       <br>
-       "※設定等の詳細でご不明な点は、各通信事業者様に直接お問い合わせください。"
-       <br>
-       "当フォームの受付完了をお知らせする自動返信メールの後、2営業日以内にサポートデスクからの詳しいご返信メールが届かない場合、上記の理由からメールが拒否されている可能性がございます。お手数ですが端末の設定をご確認の上、お問い合わせいただけますようお願い申し上げます。「@ezweb.ne.jp」「@docomo.ne.jp」「@softbank.ne.jp」などのEメールアドレスをご利用の場合、受信拒否設定等の理由により、弊社からお送りするメールをお届けすることができない可能性があります。
-       ドメイン拒否設定を解除していただくか、弊社ドメイン「olive.com」を受信リストに加えていただきますよう、お願いいたします。"
-       <br>
-        "※設定等の詳細でご不明な点は、各通信事業者様に直接お問い合わせください。"
-      </p>
-      <p class=small>
-       "当フォームの受付完了をお知らせする自動返信メールの後、2営業日以内にサポートデスクからの詳しいご返信メールが届かない場合、上記の理由からメールが拒否されている可能性がございます。お手数ですが端末の設定をご確認の上、お問い合わせいただけますようお願い申し上げます。"
-      </p>
+    <div class="contact_form_low">
+      <div id="submit-box">
+        <button type="submit" id="submit" class="text_btn">この内容で相談</button>
+      </div>
+    <div class="contact_form_coment">
+      <h3> Oliveをご利用のお客様 </h3>
+        <p class=small>
+         「@ezweb.ne.jp」「@docomo.ne.jp」「@softbank.ne.jp」などのEメールアドレスをご利用の場合、受信拒否設定等の理由により、弊社からお送りするメールをお届けすることができない可能性があります。
+         ドメイン拒否設定を解除していただくか、弊社ドメイン「famarry.com」を受信リストに加えていただきますよう、お願いいたします。
+         <br>
+         ※設定等の詳細でご不明な点は、各通信事業者様に直接お問い合わせください。
+         <br>
+         当フォームの受付完了をお知らせする自動返信メールの後、2営業日以内にサポートデスクからの詳しいご返信メールが届かない場合、上記の理由からメールが拒否されている可能性がございます。お手数ですが端末の設定をご確認の上、お問い合わせいただけますようお願い申し上げます。「@ezweb.ne.jp」「@docomo.ne.jp」「@softbank.ne.jp」などのEメールアドレスをご利用の場合、受信拒否設定等の理由により、弊社からお送りするメールをお届けすることができない可能性があります。
+         ドメイン拒否設定を解除していただくか、弊社ドメイン「olive.com」を受信リストに加えていただきますよう、お願いいたします。
+         <br>
+          ※設定等の詳細でご不明な点は、各通信事業者様に直接お問い合わせください。
+        </p>
+        <p class=small>
+         当フォームの受付完了をお知らせする自動返信メールの後、2営業日以内にサポートデスクからの詳しいご返信メールが届かない場合、上記の理由からメールが拒否されている可能性がございます。お手数ですが端末の設定をご確認の上、お問い合わせいただけますようお願い申し上げます。
+        </p>
+      </div>  
+    </div>
   </div>
 </div>
+
