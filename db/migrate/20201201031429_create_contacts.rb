@@ -3,6 +3,7 @@ class CreateContacts < ActiveRecord::Migration[6.0]
     create_table :contacts do |t|
       t.string :country, null: false
       t.string :fullname, null: false
+      t.string :fullname_kana, null: false
       t.string :mail, null: false
       t.string :tel, null: false
       t.string :buget, null: false

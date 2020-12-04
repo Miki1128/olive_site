@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2020_12_01_031429) do
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "country", null: false
     t.string "fullname", null: false
+    t.string "fullname_kana", null: false
     t.string "mail", null: false
     t.string "tel", null: false
     t.string "buget", null: false

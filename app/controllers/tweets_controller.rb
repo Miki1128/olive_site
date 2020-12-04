@@ -12,8 +12,6 @@ class TweetsController < ApplicationController
 
   def create
     Tweet.create(tweet_params)
-    @blog = Blog.find(params[:blog_id])
-    like = current_user.likes.build(blog_id: params[:blog_id])
   end
 
   def destroy
