@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show
   resources :maps, only: :index
-  resources :contacts, only: [:index, :create]
+  resources :contacts, only: [:index, :create, :show]
 end
 

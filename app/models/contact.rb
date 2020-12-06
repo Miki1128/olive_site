@@ -1,4 +1,4 @@
 class Contact < ApplicationRecord
-  extend ActiveHash::Associations::ActiveRecordExtensions
+  has_many :users
 
 end
