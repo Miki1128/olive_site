@@ -874,7 +874,7 @@ div.contents.row .new_user {
 }
 
 div.contents.row div.content_post {
-  margin: 20px 0;
+  margin: 1vw 0 4vw 0;
   padding: 30px;
   position: relative;
   height: 400px;
@@ -1007,6 +1007,7 @@ form input[type="submit"]:hover {
   box-shadow: 0 0 5px  rgba(41, 41, 41, 0.2);
   background-color: white;
   box-sizing: border-box;
+  margin-top: -3vw;
 }
 
 .container h3 {
@@ -1056,4 +1057,16 @@ footer p {
 
 .contents_box {
   padding-top: 10vw;
+}
+
+.title_name {
+ color: #ffffff;
+}
+
+.likes_btn{
+  padding: 0.5vw 0 1vw 0.8vw; 
+}
+
+.container_comment{
+  padding: 0 0 1vw 2vw; 
 }

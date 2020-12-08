@@ -4,7 +4,8 @@
 </div>
 <div class=contents_box>
   <div class="contents row">
-    <% @tweets.each do |tweet| %>   
+    <% @tweets.each do |tweet| %>
+     <p>【<%= tweet.title %>】</p>
     <%= render partial: "tweet", locals: { tweet: tweet } %>  
     <% end %>
   </div>

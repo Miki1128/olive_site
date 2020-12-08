@@ -2,6 +2,7 @@
 
 <div class=contents_box>
   <div class="contents row">
+  <p>【<%= @tweet.title %>】</p>
 <%# 投稿内容表示画面 %>
     <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
       <% if user_signed_in? && current_user.id == @tweet.user_id %>
@@ -18,7 +19,6 @@
         </div>
     <% end %>
 <%# 投稿者表示%>
-    <p><%= @tweet.text %></p>
     <span class="name">
       <a href="/users/<%= @tweet.user.id %>">
         <span>投稿者</span><%= @tweet.user.nickname %>
@@ -28,11 +28,19 @@
     </div>
 
 <%# コメント入力画面%>
-    <div class="container">
+  <div class="container">
 
 <%#「いいね」機能%>
-    <span>♡いいね！！</span>
+    <div class="likes_btn">
+    <span>♡</span>
+    </div>         
 <%#「いいね」機能%>
+
+<%#投稿内容表示%>
+     <div class="container_comment">
+      <p><%= @tweet.text %></p>
+     </div>  
+<%#投稿内容表示%>
 
       <% if user_signed_in? %>
         <%= form_with(model: [@tweet, @comment], local: true) do |form| %>

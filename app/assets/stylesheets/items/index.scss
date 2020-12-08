@@ -34,7 +34,7 @@ a {
 
 /* //画面上部の「Where do you want to take a photo」帯部分 */
 .select-reason-contents {
-  padding: 5vh 10vw;
+  padding: 5vh 8vw;
 }
 
 .select-reason-contents>.title {
@@ -60,6 +60,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .reason-lists>.list {
@@ -71,7 +72,7 @@ a {
 }
 
 .list-pict {
-  margin-bottom: 20px;
+  margin-bottom: 0.5vw;
   width: 100%;
 }
 
@@ -79,6 +80,7 @@ a {
   font-weight: bold;
   font-size: 24px;
   line-height: 50px;
+  text-align: center;
 }
 
 /* //画面上部の「Where do you want to take a photo」帯部分 */
@@ -130,31 +132,6 @@ a {
   padding: 1vw;
   background-color: #FFF;
 }
-
-
-.item-img-content {
-  position: relative;
-}
-
-// .item-img {
-  
-// }
-
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
 
 .item-info {
   background-color: #FFF;
