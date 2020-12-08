@@ -4,53 +4,52 @@
   <div class="contact">
     <div class="contact_form">
       <h1>お問い合わせ</h1>
-        <p>Oliveサポートデスクに相談してあなたに合ったフォトグラファー/プランを提案してもらおう</p>
+        <p class=subcomment>Oliveサポートデスクに相談してあなたに合ったフォトグラファー/プランを提案してもらおう</p>
         <div class="field">
           <%= form.label :country, "撮影場所" %>
-          <%= form.text_field :country %>
+          <%= form.text_field :country, class: "contact_box"%>
         </div>
         <div class="field">
           <%= form.label :fullname, "お申込者様のお名前" %>
-          <%= form.text_field :fullname %>
+          <%= form.text_field :fullname, class: "contact_box" %>
         </div>
         <div class="field">
           <%= form.label :fullname_kana, "お名前（全角カタカナ）" %>
-          <%= form.text_field :fullname_kana %>
+          <%= form.text_field :fullname_kana, class: "contact_box" %>
         </div>
         <div class="field">
           <%= form.label :mail, "メールアドレス" %>
-          <%= form.email_field :mail %>
+          <%= form.email_field :mail, class: "contact_box" %>
         </div>
         <div class="field">
           <%= form.label :tel, "電話番号（半角ハイフンなし）" %>
-          <%= form.text_field :tel %>
+          <%= form.text_field :tel, class: "contact_box" %>
         </div>
         <div class="field">
           <%= form.label :buget, "ご予算" %>
-          <%= form.number_field :buget %>
-          <span class="input-group-text">万円</span>
+          <%= form.number_field :buget, class: "contact_box" %>
         </div>
 
       <h2>撮影日時</h2>   
         <div class="field">
           <%= form.label :shooting_start_at_date, "ご希望撮影開始日時" %>
-          <%= form.datetime_field :shooting_start_at_date %>
+          <%= form.datetime_field :shooting_start_at_date, class: "contact_box" %>
         </div>
         <div class="field">
           <%= form.label :shooting_time_duration, "ご希望撮影時間" %>
-          <%= form.number_field :shooting_time_duration %>
-          <span class="input-group-text">分</span>
+          <%= form.number_field :shooting_time_duration, class: "contact_box" %>
         </div>
    
       <h2>その他</h2>
         <div class="field">
           <%= form.label :comment, "コメント" %>
-          <%= form.text_field :comment %>
+          <%= form.text_area :comment, class: "comment_box" %>
         </div>
-        <div class="cotact_box">
+        <div class="submit_btn">
           <%= form.submit "この内容で相談する" %>
      </div>
 <% end %>
+
   <div class="contact_form_comment">
     <h3> Oliveをご利用のお客様 </h3>
       <p class=small>

@@ -1,4 +1,5 @@
 class Contact < ApplicationRecord
-  has_many :users
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :country
 
 end

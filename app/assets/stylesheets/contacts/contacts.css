@@ -4,7 +4,7 @@
 }
 
 .contact {
-  background-color: lightgray;
+  background-color: rgb(246, 248, 241);
   margin: 1vw 15vw;
   text-align: left;
 }
@@ -19,15 +19,6 @@
   text-align: left;
 }
 
-.h1.info {
-  background-color: #fafafa;
-  border: 1px solid #eee;
-  font-size: large;
-  margin: 10px 0;
-  padding: 10px 20px;
-}
-
-
 .contact_form_comment{
   margin: 4vw 1vw 0 1vw;
   font-size: 12px;
@@ -35,4 +26,31 @@
 
 .small {
   padding-top: 1vw;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_box {
+  width: 30vw;
+  height: 2.5vw;
+  margin: 0 7vw 1vw 5vw;
+}
+
+.comment_box {
+  width: 30vw;
+  height: 10vw;
+  margin: 0 7vw 0 10vw;
+}
+
+.submit_btn {
+  margin: 3vw 7vw 0 28vw;
+  width: 20vw;
+}
+
+.subcomment{
+  padding-top: 1vw;
+  padding-bottom: 2vw;
 }

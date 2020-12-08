@@ -1,8 +1,9 @@
-<div class="like_button_on">
-    <%= link_to "いいね済み", likes_delete_path(tweet_id: @tweet.id), {method: "post", remote: true} %>
-    <%= @like_count %>
-</div>
-<div class="like_button">
-    <%= link_to "いいね", likes_create_path(tweet_id: @tweet.id), {method: "post", remote: true} %>
-    <%= @like_count %>
-</div>
+<%if @tweet.like?(current_user)%>
+    <%= link_to tweet_likes_path(@post), method: :delete do %>
+        <span style="color:red;">❤︎</span>
+    <%end%>
+<%else%>
+    <%= link_to tweet_likes_path(@post), method: :post do %>
+        <span>❤︎</span>
+    <%end%>
+<%end%>

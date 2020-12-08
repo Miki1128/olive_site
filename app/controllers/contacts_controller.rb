@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to action: :show
+      render actiom: :create
     else
       render action: :index
     end
@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
 
   private
   def contact_params
-    params.require(:contact).permit(:country, :fullname, :fullname_kana, :mail, :tel, :buget, :shooting_start_at_date, :shooting_time_duration, :comment)
+    params.permit(:country, :fullname, :fullname_kana, :mail, :tel, :buget, :shooting_start_at_date, :shooting_time_duration, :comment)
   end
 
 end

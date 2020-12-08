@@ -1,6 +1,8 @@
 <%= render "shared/header" %>
+
 <div class=contents_box>
   <div class="contents row">
+<%# 投稿内容表示画面 %>
     <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
       <% if user_signed_in? && current_user.id == @tweet.user_id %>
         <div class="more">
@@ -14,15 +16,24 @@
             </li>
           </ul>
         </div>
-      <% end %>
-      <p><%= @tweet.text %></p>
-      <span class="name">
-        <a href="/users/<%= @tweet.user.id %>">
-          <span>投稿者</span><%= @tweet.user.nickname %>
+    <% end %>
+<%# 投稿者表示%>
+    <p><%= @tweet.text %></p>
+    <span class="name">
+      <a href="/users/<%= @tweet.user.id %>">
+        <span>投稿者</span><%= @tweet.user.nickname %>
         </a>
       </span>
+<%# 投稿者表示%>
     </div>
+
+<%# コメント入力画面%>
     <div class="container">
+
+<%#「いいね」機能%>
+    <span>♡いいね！！</span>
+<%#「いいね」機能%>
+
       <% if user_signed_in? %>
         <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
           <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
@@ -43,7 +54,10 @@
           <% end %>
         <% end %>
       </div>
+<%# コメント入力画面%>
+
     </div>
   </div>  
 </div>
+
 <%= render "shared/footer" %>

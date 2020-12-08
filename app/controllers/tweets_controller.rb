@@ -32,6 +32,7 @@ class TweetsController < ApplicationController
     @comments = @tweet.comments.includes(:user)
   end
 
+
   private
 
   def tweet_params
