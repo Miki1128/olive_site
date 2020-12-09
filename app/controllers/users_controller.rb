@@ -5,6 +5,7 @@ class UsersController < ApplicationController
     @nickname = user.nickname
     @tweets = user.tweets
   end
+  
 
 end
 

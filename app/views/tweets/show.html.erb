@@ -1,5 +1,5 @@
 <%= render "shared/header" %>
-
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <div class=contents_box>
   <div class="contents row">
   <p>【<%= @tweet.title %>】</p>
@@ -32,8 +32,18 @@
 
 <%#「いいね」機能%>
     <div class="likes_btn">
-    <span>♡</span>
-    </div>         
+      <% if Like.find_by(user_id: current_user.id, tweet_id: @tweet.id) %>
+      <%= link_to tweet_likes_path(tweet_id: @tweet.id, id: @tweet.likes[0].id), method: :delete, remote: true do %>
+        <i class="fas fa-heart"></i> 
+      <% end %>
+      <% else %>
+      <%= link_to tweet_likes_path(@tweet), method: :post, remote: true do %> 
+        <i class="fas fa-heart"></i>
+      <%= @tweet.likes.length %>
+      <% end %>
+      <% end %>
+    </div>
+
 <%#「いいね」機能%>
 
 <%#投稿内容表示%>
