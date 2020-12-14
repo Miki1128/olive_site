@@ -1,2 +1,1 @@
-$("#like-<%= @tweet.id %>").
-  html("<%= j(render partial: 'users/like', locals: { tweet: @tweet }) %>");
+document.getElementById('post_<%= @post.id %>').innerHTML = '<%= j(render @post) %>'

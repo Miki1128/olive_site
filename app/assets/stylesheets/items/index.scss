@@ -32,6 +32,26 @@ a {
   line-height: 60px;
 }
 
+  .simple_square_btn2 {
+    display: block;
+    position: relative;
+    margin-top: 5vw;
+    width: 250px;
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #1B1B1B;
+    background: #fff;
+    border:1px solid #1B1B1B;
+  }
+  .simple_square_btn2:hover {
+     background: #1B1B1B;
+           color: #fff;
+     cursor: pointer;
+     text-decoration: none;
+  }
+
+
 /* //画面上部の「Where do you want to take a photo」帯部分 */
 .select-reason-contents {
   padding: 5vh 8vw;

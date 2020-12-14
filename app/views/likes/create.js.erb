@@ -1,2 +1,1 @@
-("$('#<%= @tweet.id.to_s %>').
-  html('<%= j render "tweets/like", { tweet: @tweet } %>');
+＄("#like-<%= @tweet.id %>").html("<%= j(render partial: 'tweets/like', locals: { tweet: @tweet }) %>");
